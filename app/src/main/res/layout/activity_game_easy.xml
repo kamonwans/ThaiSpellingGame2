@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="540dp"
+            android:src="@drawable/check_cancel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="#C5CAE9"
+            android:id="@+id/btn_text1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="แอปพลิเคชัน" />
+
+        <Button
+            android:background="#CCFF90"
+            android:id="@+id/btn_text2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="แอพพลิเคชัน" />
+
+        <Button
+            android:background="#FF9E80"
+            android:id="@+id/btn_text3"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="แอพลิเคชัน" />
+
+    </LinearLayout>
+</LinearLayout>

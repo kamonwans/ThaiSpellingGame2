@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textview_or_margin_top">10dp</dimen>
+    <dimen name="btn_loginface_margin_top">20dp</dimen>
+    <dimen name="text_magin_left_summary_category">10dp</dimen>
+</resources>
