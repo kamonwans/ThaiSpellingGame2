@@ -1,4 +1,4 @@
-package com.example.kamonwan.thaispellinggame;
+package com.example.kamonwan.thaispellinggame.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import com.example.kamonwan.thaispellinggame.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,13 +1,13 @@
-package com.example.kamonwan.thaispellinggame;
+package com.example.kamonwan.thaispellinggame.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.view.Window;
-import android.widget.AdapterView;
-import android.widget.ListView;
+
+import com.example.kamonwan.thaispellinggame.adapter.CustomerAdapterTest;
+import com.example.kamonwan.thaispellinggame.R;
 
 import java.util.ArrayList;
 import java.util.List;

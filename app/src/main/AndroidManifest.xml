@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,41 +19,44 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RandomUserActivity"
-            android:screenOrientation="landscape"></activity>
+            android:name=".activity.RandomUserActivity"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".GameEasyActivity"
-            android:screenOrientation="landscape"></activity>
+            android:name=".activity.GameEasyActivity"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".GameHardActivity"
-            android:screenOrientation="landscape"></activity>
+            android:name=".activity.GameHardActivity"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".GameMediumActivity"
-            android:screenOrientation="landscape"></activity>
+            android:name=".activity.GameMediumActivity"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".LearnActivity"
-            android:screenOrientation="portrait"></activity>
+            android:name=".activity.LearnActivity"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".SummaryAllActivity"
-            android:screenOrientation="landscape"></activity>
+            android:name=".activity.SummaryAllActivity"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".MenuActivity"
-            android:screenOrientation="landscape"></activity>
+            android:name=".activity.MenuActivity"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".TestActivity"
-            android:screenOrientation="portrait"></activity>
+            android:name=".activity.TestActivity"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".SummaryCategoryActivity"
-            android:screenOrientation="landscape"></activity>
+            android:name=".activity.SummaryCategoryActivity"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".ProfileActivity"
-            android:screenOrientation="landscape"></activity>
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".ContactActivity"
-            android:screenOrientation="landscape"></activity>
+            android:name=".activity.ContactActivity"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".SettingActivity"
-            android:screenOrientation="landscape"></activity>
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.LearnRoyalActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

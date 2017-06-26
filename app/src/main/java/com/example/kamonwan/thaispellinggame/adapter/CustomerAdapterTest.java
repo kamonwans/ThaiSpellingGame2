@@ -1,20 +1,16 @@
-package com.example.kamonwan.thaispellinggame;
+package com.example.kamonwan.thaispellinggame.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import java.util.List;
+import com.example.kamonwan.thaispellinggame.R;
 
-/**
- * Created by kamonwan on 6/16/2017.
- */
+import java.util.List;
 
 public class CustomerAdapterTest extends RecyclerView.Adapter<CustomerAdapterTest.ViewHolder> {
     Context context;
@@ -36,10 +32,8 @@ public class CustomerAdapterTest extends RecyclerView.Adapter<CustomerAdapterTes
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-
         public TextView titileName;
         public RadioButton rdOne,rdTwo,rdThere,rdFour;
-
         public ViewHolder(View v) {
             super(v);
             titileName = (TextView) v.findViewById(R.id.TitleName);
