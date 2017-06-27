@@ -27,7 +27,20 @@ public class LearnRoyalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_learn_royal);
         init();
 
-        royalLearnList.add(new RoyalLearn("แอปพลิเคชัน", "แอพพลิเคชัน"));
+        royalLearnList.add(new RoyalLearn("ดำริ", "ดำหริ"));
+        royalLearnList.add(new RoyalLearn("ชนมพรรษา", "ชนม์พรรษา"));
+        royalLearnList.add(new RoyalLearn("ชนมายุ", "ชนม์มายุ"));
+        royalLearnList.add(new RoyalLearn("ทูลกระหม่อม", "ทูนกระหม่อม"));
+        royalLearnList.add(new RoyalLearn("ธำมรงค์", "ธำมรง"));
+        royalLearnList.add(new RoyalLearn("ประสูติ", "ประสูต"));
+        royalLearnList.add(new RoyalLearn("ราชสาส์น", "ราชสาสน์"));
+        royalLearnList.add(new RoyalLearn("ดำริ", "ดำหริ"));
+        royalLearnList.add(new RoyalLearn("ชนมพรรษา", "ชนม์พรรษา"));
+        royalLearnList.add(new RoyalLearn("ชนมายุ", "ชนม์มายุ"));
+        royalLearnList.add(new RoyalLearn("ทูลกระหม่อม", "ทูนกระหม่อม"));
+        royalLearnList.add(new RoyalLearn("ธำมรงค์", "ธำมรง"));
+        royalLearnList.add(new RoyalLearn("ประสูติ", "ประสูต"));
+        royalLearnList.add(new RoyalLearn("ราชสาส์น", "ราชสาสน์"));
 
 
         recyclerViewLearnRoyal.setLayoutManager(new LinearLayoutManager(LearnRoyalActivity.this));

@@ -25,15 +25,11 @@ public class CustomAdapterLearnRoyal extends RecyclerView.Adapter<CustomAdapterL
     ViewHolder viewHolder;
     private List<RoyalLearn> royalLearnList;
 
-    public CustomAdapterLearnRoyal(Context context, List<String> tvWordOne, List<String> tvWordTwo) {
+    public CustomAdapterLearnRoyal(Context context, List<RoyalLearn> royalLearnList) {
         this.context = context;
-        this.tvWordOne = tvWordOne;
-        this.tvWordTwo = tvWordTwo;
-        this.royalLearnList = royalLearnList;
+        this.royalLearnList= royalLearnList;
 
-    }
 
-    public CustomAdapterLearnRoyal(LearnRoyalActivity learnRoyalActivity, List<RoyalLearn> royalLearnList) {
     }
 
 
