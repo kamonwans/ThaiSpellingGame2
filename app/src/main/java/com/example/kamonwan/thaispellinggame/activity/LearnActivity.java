@@ -38,6 +38,13 @@ public class LearnActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btn_learn_transliterate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LearnActivity.this, LearnTransliterateActivit.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

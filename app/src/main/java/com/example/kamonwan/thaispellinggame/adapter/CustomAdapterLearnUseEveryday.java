@@ -6,9 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.example.kamonwan.thaispellinggame.R;
-import com.example.kamonwan.thaispellinggame.model.RoyalLearn;
 import com.example.kamonwan.thaispellinggame.model.UseLearn;
 
 import java.util.List;
@@ -17,12 +15,12 @@ public class CustomAdapterLearnUseEveryday extends RecyclerView.Adapter<CustomAd
     ViewHolder viewHolder;
     Context context;
     View view;
-    private List<UseLearn> useLearnUseList;
+    private List<UseLearn> useLearnList;
 
 
-    public CustomAdapterLearnUseEveryday(Context context, List<UseLearn> useLearnUseList) {
+    public CustomAdapterLearnUseEveryday(Context context, List<UseLearn> useLearnList) {
         this.context = context;
-        this.useLearnUseList= useLearnUseList;
+        this.useLearnList = useLearnList;
     }
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public TextView tvWordOne, tvWordTwo;
@@ -43,13 +41,13 @@ public class CustomAdapterLearnUseEveryday extends RecyclerView.Adapter<CustomAd
 
     @Override
     public void onBindViewHolder(CustomAdapterLearnUseEveryday.ViewHolder holder, int position) {
-        holder.tvWordOne.setText(useLearnUseList.get(position).getWordOne());
-        holder.tvWordTwo.setText(useLearnUseList.get(position).getWordTwo());
+        holder.tvWordOne.setText(useLearnList.get(position).getWordOne());
+        holder.tvWordTwo.setText(useLearnList.get(position).getWordTwo());
 
     }
 
     @Override
     public int getItemCount() {
-        return useLearnUseList.size();
+        return useLearnList.size();
     }
 }
