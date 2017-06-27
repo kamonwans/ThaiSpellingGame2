@@ -22,6 +22,7 @@ public class LearnActivity extends AppCompatActivity {
         btn_learn_royal = (Button) findViewById(R.id.btn_learn_royal);
         btn_learn_use_everyday = (Button) findViewById(R.id.btn_learn_use_everyday);
 
+
         btn_learn_royal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,6 +30,15 @@ public class LearnActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn_learn_use_everyday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LearnActivity.this, LearnUseEverdayActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }

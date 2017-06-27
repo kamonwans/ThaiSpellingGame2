@@ -54,9 +54,10 @@
         <activity
             android:name=".activity.SettingActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".activity.LearnRoyalActivity"
-            android:screenOrientation="portrait">
-        </activity>
+        <activity
+            android:name=".activity.LearnRoyalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.LearnUseEverdayActivity"></activity>
     </application>
 
 </manifest>

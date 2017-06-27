@@ -8,31 +8,22 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.kamonwan.thaispellinggame.R;
-import com.example.kamonwan.thaispellinggame.activity.LearnRoyalActivity;
-import com.example.kamonwan.thaispellinggame.activity.LearnUseEverdayActivity;
 import com.example.kamonwan.thaispellinggame.model.RoyalLearn;
 import com.example.kamonwan.thaispellinggame.model.UseLearn;
 
 import java.util.List;
 
-/**
- * Created by kamonwan on 6/26/2017.
- */
-
-public class CustomAdapterLearnRoyal extends RecyclerView.Adapter<CustomAdapterLearnRoyal.ViewHolder> {
+public class CustomAdapterLearnUseEveryday extends RecyclerView.Adapter<CustomAdapterLearnUseEveryday.ViewHolder> {
+    ViewHolder viewHolder;
     Context context;
     View view;
-    ViewHolder viewHolder;
-    private List<RoyalLearn> royalLearnList;
+    private List<UseLearn> useLearnUseList;
 
-    public CustomAdapterLearnRoyal(Context context, List<RoyalLearn> royalLearnList) {
+
+    public CustomAdapterLearnUseEveryday(Context context, List<UseLearn> useLearnUseList) {
         this.context = context;
-        this.royalLearnList= royalLearnList;
-
-
+        this.useLearnUseList= useLearnUseList;
     }
-
-
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public TextView tvWordOne, tvWordTwo;
 
@@ -43,25 +34,22 @@ public class CustomAdapterLearnRoyal extends RecyclerView.Adapter<CustomAdapterL
         }
     }
 
-
     @Override
-    public CustomAdapterLearnRoyal.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public CustomAdapterLearnUseEveryday.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         view = LayoutInflater.from(context).inflate(R.layout.item_learn, parent, false);
-        viewHolder = new ViewHolder(view);
+        viewHolder = new CustomAdapterLearnUseEveryday.ViewHolder(view);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(CustomAdapterLearnRoyal.ViewHolder holder, int position) {
-        holder.tvWordOne.setText(royalLearnList.get(position).getWordOne());
-        holder.tvWordTwo.setText(royalLearnList.get(position).getWordTwo());
+    public void onBindViewHolder(CustomAdapterLearnUseEveryday.ViewHolder holder, int position) {
+        holder.tvWordOne.setText(useLearnUseList.get(position).getWordOne());
+        holder.tvWordTwo.setText(useLearnUseList.get(position).getWordTwo());
 
     }
 
     @Override
     public int getItemCount() {
-        return royalLearnList.size();
+        return useLearnUseList.size();
     }
-
-
 }
