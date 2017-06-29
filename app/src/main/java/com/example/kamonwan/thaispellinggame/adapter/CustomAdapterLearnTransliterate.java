@@ -6,24 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.example.kamonwan.thaispellinggame.R;
 import com.example.kamonwan.thaispellinggame.model.TransliterateLearn;
-import com.example.kamonwan.thaispellinggame.model.UseLearn;
-
 import java.util.List;
 
-/**
- * Created by kamonwan on 6/27/2017.
- */
-
-public class CustomAdapterLearnTrasliterate extends RecyclerView.Adapter<CustomAdapterLearnTrasliterate.ViewHolder> {
+public class CustomAdapterLearnTransliterate extends RecyclerView.Adapter<CustomAdapterLearnTransliterate.ViewHolder> {
    ViewHolder viewHolder;
     Context context;
     View view;
     private List<TransliterateLearn> transliterateLearnListList;
 
-    public CustomAdapterLearnTrasliterate(Context context, List<TransliterateLearn> transliterateLearnListList) {
+    public CustomAdapterLearnTransliterate(Context context, List<TransliterateLearn> transliterateLearnListList) {
         this.context = context;
         this.transliterateLearnListList = transliterateLearnListList;
     }
@@ -39,14 +32,14 @@ public class CustomAdapterLearnTrasliterate extends RecyclerView.Adapter<CustomA
 
 
     @Override
-    public CustomAdapterLearnTrasliterate.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public CustomAdapterLearnTransliterate.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         view = LayoutInflater.from(context).inflate(R.layout.item_learn, parent, false);
-        viewHolder = new CustomAdapterLearnTrasliterate.ViewHolder(view);
+        viewHolder = new CustomAdapterLearnTransliterate.ViewHolder(view);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(CustomAdapterLearnTrasliterate.ViewHolder holder, int position) {
+    public void onBindViewHolder(CustomAdapterLearnTransliterate.ViewHolder holder, int position) {
         holder.tvWordOne.setText(transliterateLearnListList.get(position).getWordOne());
         holder.tvWordTwo.setText(transliterateLearnListList.get(position).getWordTwo());
     }

@@ -41,7 +41,7 @@ public class LearnActivity extends AppCompatActivity {
         btn_learn_transliterate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LearnActivity.this, LearnTransliterateActivit.class);
+                Intent intent = new Intent(LearnActivity.this, LearnTransliterateActivity.class);
                 startActivity(intent);
             }
         });

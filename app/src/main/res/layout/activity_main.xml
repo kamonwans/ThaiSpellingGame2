@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-       android:background="@drawable/background"
+        android:background="@drawable/background"
         android:orientation="vertical">
 
         <LinearLayout
@@ -25,9 +25,9 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <EditText
@@ -63,15 +63,21 @@
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
-            <Button
-
+         <!--   <Button
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="#5C6BC0"
                 android:text="Login with facebook" />
+-->
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebookLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
+
         </LinearLayout>
-
     </LinearLayout>
-
 </LinearLayout>

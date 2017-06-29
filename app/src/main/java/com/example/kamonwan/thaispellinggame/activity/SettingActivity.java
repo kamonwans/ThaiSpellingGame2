@@ -23,6 +23,8 @@ public class SettingActivity extends AppCompatActivity {
         Btn_HowToPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(SettingActivity.this, HowToActivity.class);
+                startActivity(intent);
 
             }
         });

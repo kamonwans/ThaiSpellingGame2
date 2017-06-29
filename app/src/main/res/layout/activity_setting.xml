@@ -20,7 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Setting"
+                android:text="ตั้งค่า"
                 android:textSize="24sp" />
         </LinearLayout>
 
@@ -32,10 +32,9 @@
 
             <ImageView
                 android:id="@+id/ImageSound"
-                android:layout_width="0dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:src="@drawable/sound" />
 
             <SeekBar
@@ -53,10 +52,9 @@
 
             <ImageView
                 android:id="@+id/ImageMusic"
-                android:layout_width="0dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:src="@drawable/music" />
 
             <SeekBar

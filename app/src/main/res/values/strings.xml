@@ -3,4 +3,5 @@
     <string name="button_log_in_with_facebook">Log in with facebook</string>
     <string name="or">OR</string>
     <string name="btn_login">Login</string>
+    <string name="facebook_app_id">445652229131170</string>
 </resources>
