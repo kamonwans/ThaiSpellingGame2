@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
 import com.example.kamonwan.thaispellinggame.R;
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
@@ -27,7 +28,7 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        callbackManager = CallbackManager.Factory.create();
 
         buttonLogin = (Button) findViewById(R.id.Btn_Login);
         buttonLogin.setOnClickListener(new View.OnClickListener() {
@@ -38,17 +39,10 @@ public class MainActivity extends FragmentActivity {
             }
         });
 
-        callbackManager = CallbackManager.Factory.create();
-        accessTokenTracker = new AccessTokenTracker() {
-            @Override
-            protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken,
-                                                       AccessToken currentAccessToken) {
 
-            }
-        };
-       accessToken = AccessToken.getCurrentAccessToken();
+        accessToken = AccessToken.getCurrentAccessToken();
         LoginButton loginButton = (LoginButton) findViewById(R.id.facebookLogin);
-        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
+//        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
@@ -56,15 +50,23 @@ public class MainActivity extends FragmentActivity {
                 startActivity(intent);
 
             }
+
             @Override
             public void onCancel() {
 
             }
+
             @Override
             public void onError(FacebookException error) {
 
             }
         });
+        accessTokenTracker = new AccessTokenTracker() {
+            @Override
+            protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken) {
+
+            }
+        };
     }
 
     @Override
