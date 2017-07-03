@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#e7d6cf"
+            android:background="@color/colorLearnUseEveryDay"
             android:text="คำศัพท์ที่ใช้ในชีวิตประจำวัน" />
 
         <Button
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#bbb4aa"
+            android:background="@color/colorLearnTransliterate"
             android:text="คำทับศัพท์" />
 
         <Button
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#e08b6e"
+            android:background="@color/colorLearnRoyal"
             android:text="คำราชาศัพท์" />
     </LinearLayout>
 </LinearLayout>

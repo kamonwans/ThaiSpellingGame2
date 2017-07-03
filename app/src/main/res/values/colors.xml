@@ -3,5 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorButtonProfile">#E57373</color>
+    <color name="colorButtonProfile">#feeec2</color>
+    <color name="colorTest">#f4b197</color>
+    <color name="colorProfile">#f67280</color>
+    <color name="colorLearn">#c06c84</color>
+    <color name="colorSetting">#6c5b7b</color>
+    <color name="colorContact">#355c7d</color>
+    <color name="colorLearnUseEveryDay">#e7d6cf</color>
+    <color name="colorLearnTransliterate">#bbb4aa</color>
+    <color name="colorLearnRoyal">#e08b6e</color>
 </resources>

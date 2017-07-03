@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#f4b197"
+            android:background="@color/colorTest"
             android:orientation="horizontal">
 
             <ImageView
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#f67280"
+            android:background="@color/colorProfile"
             android:orientation="horizontal">
 
             <ImageView
@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#c06c84"
+            android:background="@color/colorLearn"
             android:orientation="horizontal">
 
             <ImageView
@@ -118,7 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#355c7d"
+            android:background="@color/colorContact"
             android:orientation="horizontal">
 
             <ImageView
@@ -136,7 +136,6 @@
                 android:text="ติดต่อเรา"
                 android:textSize="18sp"
                 android:textStyle="bold" />
-
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
