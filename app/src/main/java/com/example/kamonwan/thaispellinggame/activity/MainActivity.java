@@ -5,19 +5,15 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import com.example.kamonwan.thaispellinggame.R;
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
-import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
-
-import java.util.Arrays;
-
+import android.database.sqlite.SQLiteDatabase;
 public class MainActivity extends FragmentActivity {
     Button buttonLogin;
     CallbackManager callbackManager;
@@ -39,7 +35,6 @@ public class MainActivity extends FragmentActivity {
             }
         });
 
-
         accessToken = AccessToken.getCurrentAccessToken();
         LoginButton loginButton = (LoginButton) findViewById(R.id.facebookLogin);
 //        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
@@ -48,12 +43,10 @@ public class MainActivity extends FragmentActivity {
             public void onSuccess(LoginResult loginResult) {
                 Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                 startActivity(intent);
-
             }
 
             @Override
             public void onCancel() {
-
             }
 
             @Override
@@ -80,7 +73,6 @@ public class MainActivity extends FragmentActivity {
         super.onDestroy();
         accessTokenTracker.stopTracking();
     }
-
 
 }
 

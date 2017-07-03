@@ -20,6 +20,27 @@
             android:text="คำทับศัพท์"
             android:textSize="24sp" />
     </LinearLayout>
+    <LinearLayout
+        android:background="#99b898"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="คำที่เขียนถูก" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="คำที่เขียนผิด" />
+    </LinearLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
